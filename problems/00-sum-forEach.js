@@ -17,6 +17,14 @@ let sumForEach = function (arr) {
   return total;
 };
 
+// let sumForEach = function (arr) {
+//   let total = 0;
+//   arr.forEach(function (num) {
+//     total += num;
+//   });
+//   return total;
+// };
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
