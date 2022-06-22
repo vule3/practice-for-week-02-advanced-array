@@ -25,8 +25,11 @@ console.log(chooseyEndings(17, 'ily'));
 // [ ]
 */
 
-let chooseyEndings = function(words, suffix) {
-  // Your code here
+let chooseyEndings = function (words, suffix) {
+  if (!Array.isArray(words)) {
+    return [];
+  }
+  return words.filter((chars) => chars.endsWith(suffix));
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -35,4 +38,4 @@ try {
   module.exports = chooseyEndings;
 } catch (e) {
   module.exports = null;
-}
+}
